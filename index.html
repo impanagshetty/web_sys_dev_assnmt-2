@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Assignment 2</title>
+    </head>
+    <body>
+
+        <div class="navbar" id="topmost">
+            <ul>
+               <li><a href="#question1">Question 1</a></li>
+               <li><a href="#question2">Question 2</a></li>
+               <li><a href="#question3">Question 3</a></li>             
+            </ul>
+         </div>
+
+
+        <div class="section" id="question1">
+        <h2>Question 1</h2>
+        <p>Please enter a string</p>
+        <input type="text" id="input1" pattern="[A-Za-z]" onkeypress="checkInput(event)">
+        <button type="button" onclick="checkVowelsConsonants()">Submit</button>
+        <p id="result1"></p>
+        </div>
+
+        <div class="section" id="question2">
+        <h2>Question 2</h2>
+        <p>Please enter a series of number</p>
+        <input type="number" id="input2">
+        <button type="button" onclick="checkPalindrome()">Submit</button>
+        <p id="result2"></p>
+        </div>
+
+        <div class="section" id="question3">
+        <h2>Question 3</h2>
+        <p>Please enter the subtotal of the bill</p>
+        <input type="number" id="input3">
+        <p>Please enter the percentage of tip you would like to give</p>
+        <input type="number" id="input4">
+        <br/>
+        <br/>
+        <button type="button" onclick="calculateTotalAmount()">Submit</button>
+        <p id="result3"></p>
+        </div>
+       
+         <script src="index.js"></script>
+    </body>
+</html>
